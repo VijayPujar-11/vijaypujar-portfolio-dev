@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <title>Blog Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   </head>
-  <body></body>
+  <body>
+    <!-- This is the container CMS needs -->
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const el = document.createElement("div");
+        el.id = "nc-root"; // CMS will hook into this
+        document.body.appendChild(el);
+      });
+    </script>
+  </body>
 </html>
