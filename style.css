@@ -18,7 +18,7 @@ body {
 .header {
   text-align: center;
   padding: 3rem 1rem;
-  background: linear-gradient(270deg, #e50914, #141414, #e50914);
+  background: linear-gradient(270deg, #1a0d0d, #141414, #1a0d0d);
   background-size: 600% 600%;
   animation: gradientBG 12s ease infinite;
 }
