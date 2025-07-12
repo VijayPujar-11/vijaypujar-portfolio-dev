@@ -18,8 +18,11 @@ body {
 .header {
   text-align: center;
   padding: 3rem 1rem;
-  background: linear-gradient(270deg, #1a0d0d, #141414, #1a0d0d);
-  background-size: 600% 600%;
+  background: 
+    linear-gradient(270deg, rgba(26,13,13,0.95), rgba(20,20,20,0.95), rgba(26,13,13,0.95)),
+    url('https://www.transparenttextures.com/patterns/white-linen.png');
+  background-size: 600% 600%, auto;
+  background-blend-mode: overlay;
   animation: gradientBG 12s ease infinite;
 }
 
