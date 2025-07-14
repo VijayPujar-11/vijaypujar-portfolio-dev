@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="assets/favicon-32x32.png" />
   <meta charset="UTF-8" />
-  <meta name="description" content="Portfolio of Vijay Pujar – Final Year Law Student at NLSIU with a unique background in engineering, law, and civil services mentoring. Special interest in corporate, tech, and commercial law.">
-<meta name="author" content="Vijay Pujar">
-<meta property="og:title" content="Vijay Pujar | Legal Research Portfolio">
-<meta property="og:description" content="Explore legal papers, blogs, and projects by Vijay Pujar – NLSIU law student with experience in corporate, tech, and empirical legal research.">
-<meta property="og:image" content="https://your-site-link/assets/preview-image.jpg">
-<meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vijay Pujar | Legal Academic Research</title>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
-  <script defer src="script.js"></script>
-  <link rel="icon" href="assets/favicon.png" />
   <script defer data-domain="vijaypujar-11.github.io" src="https://plausible.io/js/script.file-downloads.outbound-links.revenue.js"></script>
 </head>
 <body>
+  <!-- Loading Spinner -->
+  <div id="loader" class="loader-wrapper" aria-label="Loading page content">
+    <div class="loader" role="status" aria-live="polite"></div>
+  </div>
 
   <!-- Header -->
-  <div class="header">
-    <h1>Vijay Pujar</h1>
-    <p>Law Student | Civil Engineer | Legal Researcher</p>
-    <p><em>"Never waste a good crisis."</em></p>
-    <div class="buttons">
-      <a href="https://drive.google.com/file/d/1TDJbEz1QCk3oJOztCTQSQneU9UBg32Aa/view?usp=drive_link" target="_blank">📄 Resume</a>
-      <a href="https://mail.google.com/mail/?view=cm&to=vijaypujar11@gmail.com" target="_blank">📧 Email Me</a>
-      <a href="https://www.linkedin.com/in/the-vijay-pujar" target="_blank">🔗 LinkedIn</a>
+  <header class="header" role="banner">
+    <h1 class="fade-in">Vijay Pujar</h1>
+    <p class="fade-in delay-1">Final-year LLB (Hons.) student at NLSIU | Civil Engineer | Former Educator</p>
+    <p class="fade-in delay-2"><em>"Never waste a good crisis"</em></p>
+    <div class="buttons fade-in delay-3" role="navigation" aria-label="Quick Links">
+      <a href="https://drive.google.com/file/d/1TDJbEz1QCk3oJOztCTQSQneU9UBg32Aa/view?usp=drive_link" target="_blank" rel="noopener">📄 Resume</a>
+      📧 <a href="https://mail.google.com/mail/?view=cm&to=vijay.pujar@nls.ac.in" target="_blank" rel="noopener noreferrer">
+        <code>vijay.pujar@nls.ac.in</code>
+      </a>
+      <a href="https://www.linkedin.com/in/the-vijay-pujar" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
     </div>
-  </div>
+  </header>
 
-  <!-- CTA Section -->
-  <div class="cta-section">
-    <h2 class="section-title">📨 Invite Me for an Assessment Internship</h2>
-    <p class="cta-text">If you’re looking for a motivated, detail-oriented intern with a unique mix of engineering and law, I’d be glad to contribute. Check out my latest work below.</p>
-    <a href="https://mail.google.com/mail/?view=cm&to=vijaypujar11@gmail.com&su=Assessment Internship Inquiry" target="_blank" class="cta-btn">Send an Invite</a>
-  </div>
-
-  <!-- About Me -->
-  <div class="about-me">
-    <h2>About Me</h2>
-    <p>I bring a unique mix of experience from both engineering and law. My Civil Engineering background taught me structured problem-solving, which I built on during my years as an educator and mentor to Civil Services aspirants. Law school sharpened my ability to think critically, write precisely, and work under high pressure.</p>
-    <p>I’m deeply interested in corporate law, venture capital, and technology law—especially where they intersect with regulatory frameworks and policy challenges.</p>
-  </div>
+  <!-- About Me Section -->
+  <section class="about-me fade-in-up" role="region" aria-labelledby="aboutHeading">
+    <h2 id="aboutHeading">About Me</h2>
+    <p>Hi, I’m Vijay Pujar. Currently, I’m in my final year of the LLB (Hons.) program at the National Law School of India University (NLSIU), Bengaluru. Before coming to law, I completed my Civil Engineering from the National Institute of Engineering (NIE), Mysore.<p>
+    <p> After graduation, I pursued the Civil Services Examination, where I cleared multiple Mains and appeared for interviews. That journey deepened my understanding of law, governance, and public systems, and sparked my eventual transition to legal education.</p>
+    <p>Eventually, I found myself pulled toward the law not just as a subject, but as a way to create and learn something more pertinant. Law school has been a game-changer, giving structure and focus to my earlier experiences.Outside of law, I’ve studied data science and have been an Educator where I have taught hundreds of aspirants preparing for civil services. I believe in continuous learning, thoughtful work and connecting law with real-world impact.</p>
+    <p>I’ve interned at Chandhiok & Mahajan and Mani Chengappa & Mathur, where I worked on commercial contracts, SEBI regulations, stamp duty and export control. Through these experiences, I’ve developed a growing interest in corporate, commercial and technology law especially where they intersect with regulation. I’m particularly drawn to areas like commercial contracts, private equity and venture capital.</p>
+    <p>This portfolio is a space where I share my research writings and publications which reflect intersection of law, policy and regulations.</p>
+  </section>
 
   <!-- Search -->
   <div class="search-bar">
     <input type="text" id="searchInput" placeholder="Search papers by title or tag…"/>
   </div>
 
-  <!-- Filter Buttons -->
+  <!-- Filter Bar -->
   <div class="filter-bar">
     <button class="filter-btn active" data-tag="all">All</button>
     <button class="filter-btn" data-tag="Tech law">Tech Law</button>
@@ -59,10 +57,10 @@
     <button class="filter-btn" data-tag="Constitutional law">Constitutional Law</button>
   </div>
 
-  <!-- Research Cards -->
+  <!-- Card Container -->
   <div class="container">
     <!-- Card 1 -->
-    <div class="card" data-tags="Tech law, Privacy, Contracts">
+    <div class="card" data-tags="Tech law, Contracts, Privacy">
       <div class="card-inner">
         <div class="card-front">
           <img src="assets/digital_bailment.jpg" alt="Digital Bailment"/>
@@ -157,17 +155,23 @@
     </div>
   </div>
 
-  <!-- Blog Section -->
+  <!-- Blog/Updates Section -->
   <div class="blog-section">
-    <h2>📝 Blog & Updates</h2>
+    <h2>📌 Blog & Updates</h2>
     <div id="blogList">
-      <div class="blog-post"><h3>July 2025 – Added New Papers</h3><p>New work on adoption and constitutional autonomy added.</p></div>
-      <div class="blog-post"><h3>June 2025 – Site Launched</h3><p>Portfolio live with research previews and PDF modal viewer.</p></div>
+      <div class="blog-post">
+        <h3>July 2025 – Added Inter‑country Adoption & Sixth Schedule Papers</h3>
+        <p>Check them out above!</p>
+      </div>
+      <div class="blog-post">
+        <h3>June 2025 – Site Launched</h3>
+        <p>Initial launch with three papers.</p>
+      </div>
     </div>
     <div class="blog-editor">
-      <h3>Add a New Blog Post</h3>
+      <h3>Add a New Post</h3>
       <input type="text" id="blogTitle" placeholder="Post Title"/>
-      <textarea id="blogContent" placeholder="Write your update here…"></textarea>
+      <textarea id="blogContent" placeholder="Write your post here…"></textarea>
       <button id="addBlogBtn">Publish</button>
     </div>
   </div>
@@ -183,5 +187,6 @@
   <!-- Footer -->
   <div class="footer">© 2025 Vijay Pujar. All Rights Reserved.</div>
 
+  <script src="script.js"></script>
 </body>
 </html>
